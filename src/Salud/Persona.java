@@ -10,7 +10,7 @@ public class Persona {
         String apellido;
         Double peso;
         Double estatura;
-        String edad;
+        int edad;
         String sexo;
         Scanner lectura=new Scanner(System.in);
     
@@ -49,6 +49,14 @@ public class Persona {
 
 
         }
-    
+        public void mayorEdad(){
+            if (edad>=18){
+                System.out.println("Usted es maypr de edad");
+              }
+              else if (edad<18){
+                System.out.println("usted es menor de edad");
+              }
+        }
+
     
 }
