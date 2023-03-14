@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Persona {
  
         
-        public static Object pedirDatos;
+        private static Object pedirDatos;
         String tipoDoc;
         String nombre;
         String apellido;
