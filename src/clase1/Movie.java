@@ -1,16 +1,27 @@
 package clase1;
 
 public class Movie {
-    public static void main(String [] args) {
+
+          private String nombre,categoria;
         
-        private String name;
-        private String category;
        int year;
          public int duration;
+         public void mostrarMovie(){
+            System.out.println("El nombre de la pelicula es " +nombre);
+        }
 
-
-       
-        
+    
+    public Movie() {
     }
+
+
+
+    public Movie(String nombre, String categoria, int year, int duration) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.year = year;
+        this.duration = duration;
+    }
+    
     
 }

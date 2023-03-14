@@ -3,8 +3,16 @@ import java.util.Scanner;
 public class Animal {
     //Atributos
      String nombre;
-    String edad;
+    int edad;
     Scanner lectura=new Scanner(System.in);
+    
+
+    public Animal() {
+    }
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
 
     //Metodos u operaciones
     public void registrarAnimal (){
@@ -12,7 +20,7 @@ public class Animal {
         System.out.println("ingrese el  nombre del animal");
         nombre=lectura.nextLine();
         System.out.println("ingrese la edad");
-        edad=lectura.nextLine();
+        edad=lectura.nextInt();
     }
     public void mostrarAnimal(){
         System.out.println("El nombre del animal ingresado es " +nombre);
@@ -21,6 +29,15 @@ public class Animal {
       int duplicado=edad*2;
         return duplicado;
     }
-    public void mayorEdad()
+    public void mostrarMovie(){
+        System.out.println("El nombre de la pelicula es " +nombre);
+    }
+    public void mostrarMovie(int no){
+        System.out.println("El nombre de la pelicula es " +no);
+    }
+    public void mostrarMovie(String no){
+        System.out.println("El nombre de la pelicula es " +no);
+    }
+    
 
 }
