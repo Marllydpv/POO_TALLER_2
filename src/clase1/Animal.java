@@ -13,7 +13,20 @@ public class Animal {
         this.nombre = nombre;
         this.edad = edad;
     }
-
+    //Metodos accesores
+    public int getEdad(){ //Metodo get o getter
+        return edad;
+    }
+    public String getNombre(){ 
+        return nombre;
+    }
+    public void setEdad(int edad){ //Metodo set o setter
+        this.edad=edad;
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     //Metodos u operaciones
     public void registrarAnimal (){
         //cuerpo metodo

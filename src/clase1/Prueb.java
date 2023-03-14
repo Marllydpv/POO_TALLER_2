@@ -6,7 +6,7 @@ public class Prueb {
      */
     public static void main(String[] args ) {
         Animal guacamayo = new Animal("bambu", 10);
-       
+       Movie avatar=new Movie ();
         Movie up =new Movie ("lanochedeldemonio", "terror", 10, 1);
     
 
@@ -14,9 +14,11 @@ public class Prueb {
         panda.mostrarAnimal();
         up.mostrarMovie();
         
-
-        guacamayo.registrarAnimal();//invocar o llamar un metodo
-       
+guacamayo.setNombre("pancho");
+guacamayo.setEdad(10);
+        guacamayo.registrarAnimal();
+       System.out.println("el nombre del guacamayo es"+guacamayo.getNombre()+ "y su edad es"+ guacamayo.getEdad());
+      
     }
     
 }
