@@ -1,9 +1,9 @@
 package Salud;
 import java.util.Scanner;
-public class Persona {
+public class Persona2 {
 
     public static void main(String[] args) {
-        
+      
     }
 
     int TipoDoc;
@@ -19,7 +19,7 @@ public class Persona {
     
     Scanner lectura= new Scanner(System.in);
 
-    public void registrarpersona(){
+    public void registrarpersona(String peso){
         System.out.println("ingrese el tipo de documento");
         TipoDoc= lectura.nextInt();
         System.out.println("ingrese el documento");
@@ -29,7 +29,7 @@ public class Persona {
         System.out.println("ingrese el apellido");
         apellido= lectura.nextInt();
         System.out.println("ingrese el peso");
-        peso= lectura.nextInt(); 
+        peso= lectura.nextLine(); 
         System.out.println("ingrese la estatura");
         estatura= lectura.nextInt();
         System.out.println("ingrese la edad");
@@ -53,17 +53,7 @@ public class Persona {
         peso_actual= Math.pow(estatura, 2);
         if (peso_actual<=20) {
             System.out.println("El peso"+peso_actual+"esta por debajo de lo ideal");
-        }
-        else if (peso_actual >=20) {
-            System.out.println("el peso"+peso_actual+"es ideal");
-            }
-        else if (peso_actual >25) {
-            System.out.println(+peso_actual+"Esta en sobrepeso");
-        }
-    }
-    public void mayorEDAD(){
-        System.out.println("La persona es"+edad);
     }
 }
-
+}
 
